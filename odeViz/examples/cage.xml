@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xode xmlns:xi="http://www.w3.org/2003/XInclude">
+	<world name="world">
+		<space name="space">
+
+			<geom name="top">
+				<transform>
+					<position x="0" y="5" z="0" />
+				</transform>
+				<box sizex="10" sizey="0.1" sizez="10"/>
+			</geom>
+			
+			<geom name="bottom">
+				<transform>
+					<position x="0" y="-5" z="0" />
+				</transform>
+				<box sizex="10" sizey="0.1" sizez="10"/>
+			</geom>
+			
+			<geom name="left">
+				<transform>
+					<position x="-5" y="0" z="0" />
+				</transform>
+				<box sizex="0.1" sizey="10" sizez="10"/>
+			</geom>
+			
+			<geom name="right">
+				<transform>
+					<position x="5" y="0" z="0" />
+				</transform>
+				<box sizex="0.1" sizey="10" sizez="10"/>
+			</geom>
+			
+			<geom name="front">
+				<transform>
+					<position x="0" y="0" z="-5" />
+				</transform>
+				<box sizex="10" sizey="10" sizez="0.1"/>
+			</geom>
+			
+			<geom name="back">
+				<transform>
+					<position x="0" y="0" z="5" />
+				</transform>
+				<box sizex="10" sizey="10" sizez="0.1"/>
+			</geom>
+			      
+		</space>
+	</world>
+</xode>

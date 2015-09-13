@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xode xmlns:xi="http://www.w3.org/2003/XInclude">
+	<world name="world">
+	<space name="space">
+
+			<geom>
+			<plane 	a="0" b="1" c="0" d="0"/>
+			</geom>
+			
+			<body>
+				<transform>
+					<position x="0.001" y="5" z="0"/>
+				</transform>	    
+				<geom>
+					<cappedCylinder length="2" radius="1" />
+				</geom>	
+				<mass>
+					<adjust total="1" />
+				</mass>
+			</body>
+			
+			<body>
+				<transform>
+					<position x="0" y="10" z="0"/>
+				</transform>	    
+				<geom>
+					<cappedCylinder length="2" radius="1" />
+				</geom>	
+				<mass>
+					<adjust total="1" />
+				</mass>
+			</body>
+			
+			<body>
+				<transform>
+					<position x="0.001" y="15" z="0"/>
+				</transform>	    
+				<geom>
+					<cappedCylinder length="2" radius="1" />
+				</geom>	
+				<mass>
+					<adjust total="1" />
+				</mass>
+			</body>
+			
+			<body>
+				<transform>
+					<position x="0" y="20" z="0"/>
+				</transform>	    
+				<geom>
+					<cappedCylinder length="2" radius="1" />
+				</geom>	
+				<mass>
+					<adjust total="1" />
+				</mass>
+			</body>
+			
+			<body>
+				<transform>
+					<position x="0.001" y="25" z="0"/>
+				</transform>	    
+				<geom>
+					<cappedCylinder length="2" radius="1" />
+				</geom>	
+				<mass>
+					<adjust total="1" />
+				</mass>
+			</body>
+			
+			<body>
+				<transform>
+					<position x="0" y="30" z="0"/>
+				</transform>	    
+				<geom>
+					<cappedCylinder length="2" radius="1" />
+				</geom>	
+				<mass>
+					<adjust total="1" />
+				</mass>
+			</body>
+			
+			<body>
+				<transform>
+					<position x="0.001" y="35" z="0"/>
+				</transform>	    
+				<geom>
+					<cappedCylinder length="2" radius="1" />
+				</geom>	
+				<mass>
+					<adjust total="1" />
+				</mass>
+			</body>
+			
+			<body>
+				<transform>
+					<position x="0" y="40" z="0"/>
+				</transform>	    
+				<geom>
+					<cappedCylinder length="2" radius="1" />
+				</geom>	
+				<mass>
+					<adjust total="1" />
+				</mass>
+			</body>
+			
+			
+			
+			<body>
+				<transform>
+					<position x="0" y="0" z="0"/>
+				</transform>	
+				<geom name="test">
+        			<trimesh>
+            			<vertices>
+                			<v x="0" y="0" z="0" />
+                			<v x="3" y="0" z="0" />
+                			<v x="0" y="0" z="4" />
+                			<v x="3" y="0" z="4" />
+                			<v x="0" y="4" z="0" />
+                			<v x="3" y="4" z="0" />
+                			<v x="0" y="2" z="4" />
+                			<v x="3" y="2" z="4" />
+            			</vertices>
+				<triangles>
+                			<t ia="1" ib="2" ic="3" />
+                			<t ia="2" ib="3" ic="4" />
+                			<t ia="2" ib="3" ic="4" />
+                			<t ia="1" ib="5" ic="3" />
+                			<t ia="1" ib="5" ic="2" />
+                			<t ia="2" ib="5" ic="6" />
+                			<t ia="3" ib="5" ic="7" />
+                			<t ia="2" ib="4" ic="6" />
+                			<t ia="4" ib="3" ic="7" />
+                			<t ia="5" ib="6" ic="7" />
+                			<t ia="6" ib="7" ic="8" />
+                			<t ia="4" ib="7" ic="8" />
+                			<t ia="4" ib="6" ic="8" />
+        			</triangles>
+        			</trimesh>
+			</geom>
+			   
+			   	<mass type="mimicgeom">
+	    			<adjust total="100" />
+	   			</mass>
+			   
+			</body>
+			      
+	</space>
+	</world>
+</xode>
