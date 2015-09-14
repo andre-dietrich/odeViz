@@ -149,7 +149,7 @@ everything that is required for the simulation... It check if there occurred
 some collisions, and calculates the the next step of the simulation, with
 delta time dt, which was also defined during the initialization.
 
-[![example/tutorial3.py](http://img.youtube.com/vi/1VQMAje62FE/0.jpg)](http://www.youtube.com/watch?v=1VQMAje62FE)
+[![example/tutorial3.py](http://img.youtube.com/vi/1VQMAje62FE/0.jpg)](http://www.youtube.com/watch?v=1VQMAje62FE "watch on YouTube")
 
 ### Changing Tutorial 3
 
@@ -169,7 +169,7 @@ for the creation of objects. Every new object is here directly added to the
 visualization, and their color-properties are changed in the vtk manner (to random
 colors).
 
-[![example/tutorial3.py](http://img.youtube.com/vi/T7C_IB3Cri8/0.jpg)](http://www.youtube.com/watch?v=T7C_IB3Cri8)
+[![example/tutorial3.py](http://img.youtube.com/vi/T7C_IB3Cri8/0.jpg)](http://www.youtube.com/watch?v=T7C_IB3Cri8 "watch on YouTube")
 
 
 ## Contact
