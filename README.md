@@ -91,7 +91,7 @@ XML file. Simple capsules on different heights and a plane on the ground. By usi
 xode, it is possible to read in this xml-file and to retrieve all required data for
 the simulation.
 
-```
+``` python
 import ode
 import xode.parser
 import libxml2
