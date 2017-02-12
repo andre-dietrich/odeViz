@@ -27,7 +27,7 @@ ode-interface for Python, it also contains the xode-project, which enables
 the definition of ode-simulations with XML. See the ReadMe for further
 installation information.
 
-###### Visualization Toolkit (VTK): http://www.vtk.org
+###### Visualization Toolkit (VTK) version 6 : http://www.vtk.org
 
 Download VTK if you haven't installed it yet and compile it with Python support.
 

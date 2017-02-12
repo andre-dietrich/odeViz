@@ -24,7 +24,7 @@ setup(
     url="https://pypi.python.org/pypi/odeViz/0.2",
     packages=['odeViz', "odeViz.examples"],
     long_description=read('README.md'),
-    install_requires=['PyVTK'],
+    #install_requires=['PyVTK'],
     #dependency_links = [
     #   "https://pypi.python.org/packages/source/P/PyODE/PyODE-1.2.1.tar.gz",
     #   "http://cens.ioc.ee/projects/pyvtk/rel-0.x/PyVTK-0.latest.tar.gz"],

@@ -29,7 +29,7 @@ class ODE_Object():
         if mapper == 0:
             self.mapper.SetInputConnection(self.src.GetOutputPort())
         else:
-            self.mapper.SetInput(eval("self.src" + mapper))
+            self.mapper.SetInputData(eval("self.src" + mapper))
 
         self.mapper.ScalarVisibilityOff()
 
