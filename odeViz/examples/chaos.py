@@ -117,7 +117,7 @@ class Simulation(ode_viz.ODE_Visualization):
                             self.GetProperty(g).SetOpacity(0.25)
                             break
             except ValueError:
-                print "not my fault"
+                print ("not my fault")
 
         self.objExplode = []
 

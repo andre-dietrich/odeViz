@@ -149,18 +149,18 @@ class ODE_Visualization(VTK_Visualization):
         self._printInfo()
 
     def _printInfo(self):
-        print "odeViz"
-        print "======"
-        print "VisualizationToolKit (vtk) for the OpenDynamicsEngine"
-        print ""
-        print "Key-Press-Events"
-        print "----------------"
-        print "Ctrl + c|C -> print Camera-settings"
-        print "Ctrl + h|H -> take a screensHot"
-        print "Ctrl + p|P -> Pause and run simulation"
-        print "Ctrl + q|Q -> Quit simualtion"
-        print "Ctrl + s|S -> enable/disable StereoScopic view"
-        print "Ctrl + v|V -> enable/disable Visualization"
+        print ("odeViz")
+        print ("======")
+        print ("VisualizationToolKit (vtk) for the OpenDynamicsEngine")
+        print ("")
+        print ("Key-Press-Events")
+        print ("----------------")
+        print ("Ctrl + c|C -> print Camera-settings")
+        print ("Ctrl + h|H -> take a screensHot")
+        print ("Ctrl + p|P -> Pause and run simulation")
+        print ("Ctrl + q|Q -> Quit simualtion")
+        print ("Ctrl + s|S -> enable/disable StereoScopic view")
+        print ("Ctrl + v|V -> enable/disable Visualization")
 
     def execute(self):
         """ execute one simulation step and update the view;
@@ -245,11 +245,11 @@ class ODE_Visualization(VTK_Visualization):
         # Crtl + c
         if (key == "c" or key == "C") and self._ctrl:
             (val1, val2, val3) = self.ren.GetActiveCamera().GetPosition()
-            print "Position:  ", val1, val2, val3
+            print ("Position:  ", val1, val2, val3)
             (val1, val2, val3) = self.ren.GetActiveCamera().GetFocalPoint()
-            print "FocalPoint:", val1, val2, val3
+            print ("FocalPoint:", val1, val2, val3)
             (val1, val2, val3) = self.ren.GetActiveCamera().GetViewUp()
-            print "ViewUp:    ", val1, val2, val3
+            print ("ViewUp:    ", val1, val2, val3)
 
         # Ctrl + q -> stops the simulation
         if (key == "q" or key == "Q") and self._ctrl:

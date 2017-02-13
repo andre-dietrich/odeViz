@@ -17,7 +17,7 @@ import numpy
 
 class ODE_Object():
     """ Standard class for visualizations of ODE-Geometries  """
-    def __init__(self, geom, ident=None, mapper=0):
+    def __init__(self, geom, ident=None):
         self.ident = ident
 
         self.geom = geom
@@ -26,10 +26,7 @@ class ODE_Object():
         self.act = vtkActor()
         self.trans = vtkTransform()
 
-        if mapper == 0:
-            self.mapper.SetInputConnection(self.src.GetOutputPort())
-        else:
-            self.mapper.SetInputData(eval("self.src" + mapper))
+        self.mapper.SetInputConnection(self.src.GetOutputPort())
 
         self.mapper.ScalarVisibilityOff()
 
@@ -79,7 +76,7 @@ class ODE_Ray(ODE_Object):
     def __init__(self, geom, ident=None):
 
         self.src = vtkLineSource()
-        ODE_Object.__init__(self, geom, ident, ".GetOutput()")
+        ODE_Object.__init__(self, geom, ident)
 
         length = self.geom.getLength()
 
