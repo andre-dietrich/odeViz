@@ -111,7 +111,7 @@ class ODE_TriMesh(ODE_Object):
     def __init__(self, geom, ident=None):
 
         self.src = vtkPolyData()
-        ODE_Object.__init__(self, geom, ident, "")
+        ODE_Object.__init__(self, geom, ident)
 
         points = vtkPoints()
         vertices = vtkCellArray()
