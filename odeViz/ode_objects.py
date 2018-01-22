@@ -17,7 +17,7 @@ import numpy
 
 class ODE_Object():
     """ Standard class for visualizations of ODE-Geometries  """
-    def __init__(self, geom, ident=None):
+    def __init__(self, geom, ident=None, poly=False):
         self.ident = ident
 
         self.geom = geom
@@ -26,7 +26,10 @@ class ODE_Object():
         self.act = vtkActor()
         self.trans = vtkTransform()
 
-        self.mapper.SetInputConnection(self.src.GetOutputPort())
+        if poly:
+            self.mapper.SetInputData(self.src)
+        else:
+            self.mapper.SetInputConnection(self.src.GetOutputPort())
 
         self.mapper.ScalarVisibilityOff()
 
@@ -111,7 +114,7 @@ class ODE_TriMesh(ODE_Object):
     def __init__(self, geom, ident=None):
 
         self.src = vtkPolyData()
-        ODE_Object.__init__(self, geom, ident)
+        ODE_Object.__init__(self, geom, ident, True)
 
         points = vtkPoints()
         vertices = vtkCellArray()
