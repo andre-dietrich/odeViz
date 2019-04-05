@@ -16,9 +16,29 @@ rest …
 
 
 ### Requirements
+
 ###### Open Dynamics Engine: http://www.ode.org
 
-Download the current version, compile it or use binary-packages.
+Download the latest tar from : https://bitbucket.org/odedevs/ode/downloads/
+
+and decompress it to your desired destination ...
+
+``` bash
+cd ode-0.16
+./configure --enable-shared   # has to be compiled as a shared lib for python
+make
+sudo make install
+```
+
+To build it for Python, you will probably have to install Cython
+
+``` base
+sudo apt install cython3
+cd bindings
+cd python
+sudo python3 setup.py build
+sudo python3 setup.py install
+```
 
 ###### PyODE: http://pyode.sourceforge.net
 
@@ -27,9 +47,13 @@ ode-interface for Python, it also contains the xode-project, which enables
 the definition of ode-simulations with XML. See the ReadMe for further
 installation information.
 
-###### Visualization Toolkit (VTK) version 6 : http://www.vtk.org
+###### Visualization Toolkit (VTK) version 8 : http://www.vtk.org
 
-Download VTK if you haven't installed it yet and compile it with Python support.
+Install the current version of vtk ... in my case this was 8...
+
+```
+sudo pip3 install vtk
+```
 
 ###### Additional
 
@@ -41,12 +65,21 @@ PyODE from http://pyode.sourceforge.net.
 
 Using the python setup tools:
 
-```
-$ sudo python setup.py build
-$ sudo python setup.py install
+``` bash
+git clone https://github.com/andre-dietrich/odeViz
+cd odeViz
+sudo python3 setup.py build
+sudo python3 setup.py install
 ```
 
-all dependencies should be installed automatically.
+### Try out the examples
+
+``` bash
+cd odeViz/odeViz/examples
+python3 chaos.py
+
+python3 tutorial3.py
+```
 
 ## Basic architecture
 
@@ -170,11 +203,3 @@ visualization, and their color-properties are changed in the vtk manner (to rand
 colors).
 
 [![example/tutorial3.py](http://img.youtube.com/vi/T7C_IB3Cri8/0.jpg)](http://www.youtube.com/watch?v=T7C_IB3Cri8 "watch on YouTube")
-
-
-## Contact
-
-| André Dietrich |                                           |
-| -------------- | ----------------------------------------- |
-| web:           | http://eos.cs.ovgu.de/crew/dietrich/      |
-| eMail:         | dietrich@ivs.cs.uni-magdeburg.de          |
