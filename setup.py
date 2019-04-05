@@ -12,9 +12,9 @@ def read(fname):
 
 setup(
     name="odeViz",
-    version="0.2.1",
+    version="0.2.2",
     author="Andre Dietrich",
-    author_email="dietrich@ivs.cs.uni-magdeburg.de",
+    author_email="andre.dietrich@ovgu.de",
     description=("This toolbox generates automatically a vtk-visualization \
       for an ode (Open Dynamics Engine) simulation under Python. You only \
       have to define the simulation space and world and forward these \

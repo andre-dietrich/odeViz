@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 #    Copyright (C) 2015 by
-#    André Dietrich <dietrich@ivs.cs.uni-magdeburg.de>
-#    Sebastian Zug <zug@ivs.cs.uni-magdeburg.de>
+#    André Dietrich <andre.dietrich@ovgu.de>
 #    All rights reserved.
 #    BSD license.
 
@@ -12,14 +11,14 @@ from vtk import vtkRenderer, vtkRenderWindow, vtkRenderWindowInteractor, \
 from ode import Body, GeomBox, GeomSphere, GeomCapsule, GeomCCylinder, \
     GeomPlane, GeomTriMesh, GeomRay, GeomCylinder, CloseODE
 
-from ode_objects import ODE_Box, ODE_Sphere, ODE_Plane, ODE_Ray, ODE_TriMesh, \
+from odeViz.ode_objects import ODE_Box, ODE_Sphere, ODE_Plane, ODE_Ray, ODE_TriMesh, \
     ODE_Cylinder, ODE_Capsule
 
 #import threading
 from operator import eq
 from time import time, sleep
 from threading  import Thread
-from thread import start_new_thread
+#from thread import start_new_thread
 
 
 class VTK_Visualization(Thread):

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 #    Copyright (C) 2015 by
-#    André Dietrich <dietrich@ivs.cs.uni-magdeburg.de>
-#    Sebastian Zug <zug@ivs.cs.uni-magdeburg.de>
+#    André Dietrich <andre.dietrich@ovgu.de>
 #    All rights reserved.
 #    BSD license.
 
